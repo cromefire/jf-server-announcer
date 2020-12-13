@@ -4,7 +4,7 @@
 
 This is a small application that may be used to advertise a Jellyfin Server under a different address / name or inside another local network.
 
-## Usecases
+## Use cases
 This is useful in 2 cases primarily:
 - Your server ist behind a reverse proxy and not (securely) reachable for it local ip address that it advertises
 - Your want to advertise a server inside you network that is not inside you network (e.g. a friend's server)
