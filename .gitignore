@@ -1,0 +1,3 @@
+/.idea/*
+!/.idea/jsonSchemas.xml
+/jf-server-announcer
