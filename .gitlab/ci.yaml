@@ -38,9 +38,3 @@ upload:
     - |
       [ "${CI_COMMIT_TAG%${CI_COMMIT_TAG#?}}"x != 'vx' ] && exit 0
     - 'curl --header "JOB-TOKEN: ${CI_JOB_TOKEN}" --upload-file jf-server-announcer "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/jf-server-announcer/${CI_COMMIT_TAG#?}/jf-server-announcer"'
-    - |
-      curl --request POST \
-        --header "JOB-TOKEN: ${CI_JOB_TOKEN}" \
-        --data name="jf-server-announcer linux/amd64" \
-        --data url="${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/jf-server-announcer/${CI_COMMIT_TAG#?}/jf-server-announcer}" \
-        "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/releases/${CI_COMMIT_TAG}/assets/links"
