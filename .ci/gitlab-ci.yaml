@@ -14,7 +14,7 @@ variables:
 build:
   stage: build
   script:
-    - GOOS=linux GOARCH=amd64 go build -ldflags=-w -s
+    - GOOS=linux GOARCH=amd64 go build -ldflags="-w -s"
   artifacts:
     expose_as: jf-server-announcer
     name: jf-server-announcer
