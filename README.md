@@ -18,7 +18,7 @@ The app needs 3 parameters:
 You can get the current parameters by navigating to your Jellyfin instance, logging in and pasting the following into your browser console, you will sometimes want to change your address though.<br>
 _(only do this, if you can understand what this code does, your browser will also warn you about not pasting untrusted code)_
 ```javascript
-JSON.parse(localStorage.getItem("jellyfin_credentials")).Servers.forEach((e, i) => console.info(`Server ${i + 1}: --id="${e.Id} --name="${e.Name}" --address="${e.ManualAddress}"`));
+JSON.parse(localStorage.getItem("jellyfin_credentials")).Servers.forEach((e, i) => console.info(`Server ${i + 1}: --id="${e.Id}" --name="${e.Name}" --address="${e.ManualAddress}"`));
 ```
 
 ## Installation
