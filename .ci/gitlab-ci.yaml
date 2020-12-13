@@ -7,9 +7,12 @@ stages:
 
 include:
   - template: Dependency-Scanning.gitlab-ci.yml
+  - template: Security/SAST.gitlab-ci.yml
 
 variables:
   DS_DEFAULT_ANALYZERS: "gemnasium"
+  SAST_EXCLUDED_PATHS: ".ci, .idea"
+  SAST_DEFAULT_ANALYZERS: gosec
 
 build:
   stage: build
