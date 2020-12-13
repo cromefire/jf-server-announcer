@@ -12,7 +12,7 @@
               <option name="patterns">
                 <list>
                   <Item>
-                    <option name="path" value=".ci/gitlab-ci.yaml" />
+                    <option name="path" value=".gitlab/ci.yaml" />
                   </Item>
                 </list>
               </option>
