@@ -24,7 +24,7 @@ JSON.parse(localStorage.getItem("jellyfin_credentials")).Servers.forEach((e, i) 
 ## Installation
 _It's only tested on linux so far and binaries are only available for amd64, it should word on other platforms though._
 
-You can fetch the binary from the releases and make it executable.
+You can fetch the binary from the [packages](https://gitlab.com/cromefire_/jf-server-announcer/-/packages) and make it executable.
 
 For the sake of security it's probably best to add a user for it, so it's not running as root:
 ```shell
